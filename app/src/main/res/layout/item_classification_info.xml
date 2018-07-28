@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white_color"
+    android:id="@+id/ll_item_click"
+    >
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_16PX"
+        android:layout_marginRight="@dimen/DIMEN_16PX"
+        android:layout_marginBottom="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_10PX"
+        android:background="@drawable/shape_text_select1"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="@dimen/DIMEN_10PX"
+        android:text="劳动仲裁"
+        android:tag="101002"
+        android:textColor="@color/mainColor"
+        android:textSize="@dimen/DIMEN_28PX" />
+</LinearLayout>
+
+

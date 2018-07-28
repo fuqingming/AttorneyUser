@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title"
+        android:id="@+id/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="@dimen/DIMEN_270PX"
+                android:layout_height="@dimen/DIMEN_270PX"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/DIMEN_300PX"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/mainColor"
+                android:background="@drawable/shape_round_image2"
+                />
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="@dimen/DIMEN_240PX"
+                android:layout_height="@dimen/DIMEN_240PX"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/DIMEN_315PX"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/mainColor"
+                android:background="@drawable/shape_notify_lawyer" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

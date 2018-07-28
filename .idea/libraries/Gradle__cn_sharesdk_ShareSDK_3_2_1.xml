@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.sharesdk:ShareSDK-3.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.2.1.aar/d45d55f4f022864444b53e521e962d3e/jars/libs/ShareSDK-Core-3.2.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.2.1.aar/d45d55f4f022864444b53e521e962d3e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.2.1.aar/d45d55f4f022864444b53e521e962d3e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

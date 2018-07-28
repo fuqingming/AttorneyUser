@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_title"
+            android:id="@+id/title"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_34PX"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="#ffffff">
+
+
+            <TextView
+                android:id="@+id/tv_lawyer_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_10PX"
+                android:gravity="center"
+                android:paddingTop="@dimen/DIMEN_40PX"
+                android:text="当前有位律师在线为您解答"
+                android:textSize="@dimen/DIMEN_32PX" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_lawyer_number" />
+
+            <TextView
+                android:id="@+id/tips1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lawyer_number"
+                android:layout_margin="@dimen/DIMEN_16PX"
+                android:text="请选择您的案件类型"
+                android:textColor="#a8a8a8" />
+
+            <LinearLayout
+                android:id="@+id/common_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tips1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/tv_hyjs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="婚姻家事"
+                        android:tag="101006"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+
+                    <CheckBox
+                        android:id="@+id/tv_mjjd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="民间借贷"
+                        android:tag="101012"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+
+                    <CheckBox
+                        android:id="@+id/tv_fcjf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="房产纠纷"
+                        android:tag="101011"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/tv_jtsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="交通事故"
+                        android:tag="101004"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+
+                    <CheckBox
+                        android:id="@+id/tv_ldzc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="劳动仲裁"
+                        android:tag="101002"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+
+                    <CheckBox
+                        android:id="@+id/tv_htjf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/DIMEN_16PX"
+                        android:layout_marginRight="@dimen/DIMEN_16PX"
+                        android:layout_marginBottom="@dimen/DIMEN_10PX"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/selecter_classification_text"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:text="合同纠纷"
+                        android:tag="101001"
+                        android:textColor="@drawable/ask_lawyer_text_color_selector"
+                        android:textSize="@dimen/DIMEN_28PX" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:paddingTop="@dimen/DIMEN_10PX"
+                android:paddingBottom="@dimen/DIMEN_10PX"
+                android:paddingLeft="@dimen/DIMEN_10PX"
+                android:paddingRight="@dimen/DIMEN_10PX"
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/common_options"
+                android:layout_marginBottom="@dimen/DIMEN_10PX"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:layout_marginTop="@dimen/DIMEN_10PX"
+                android:text=">>更多"
+                android:textColor="#3d85c6"
+                android:textSize="@dimen/DIMEN_28PX" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_more"
+                android:background="#09000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/ll_select"
+                android:layout_below="@id/tv_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:id="@+id/common_option_list"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DIMEN_10PX"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/DIMEN_10PX" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_6PX"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_20PX"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="星级服务"
+                    android:textColor="#3d85c6"
+                    android:textSize="@dimen/DIMEN_32PX" />
+
+                <ImageView
+                    android:id="@+id/img_help"
+                    android:layout_width="@dimen/DIMEN_36PX"
+                    android:layout_height="@dimen/DIMEN_36PX"
+                    android:layout_toRightOf="@id/title1"
+                    android:background="@mipmap/wenhao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/star_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_title"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_10PX">
+
+                <LinearLayout
+                    android:id="@+id/one_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:padding="@dimen/DIMEN_10PX"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/DIMEN_60PX"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/xingxing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="30律币/15分钟"
+                        android:textSize="@dimen/DIMEN_24PX" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:layout_gravity="center"
+                    android:id="@+id/two_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:padding="@dimen/DIMEN_10PX"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_60PX"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xingxing" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_60PX"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xingxing" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="80律币/15分钟"
+                        android:textSize="@dimen/DIMEN_24PX" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:id="@+id/three_layout"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:gravity="center"
+                    android:padding="@dimen/DIMEN_10PX"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="@dimen/DIMEN_60PX"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xingxing" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_60PX"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xingxing" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_60PX"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/xingxing" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="200律币/15分钟"
+                        android:textSize="@dimen/DIMEN_24PX" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_marginBottom="@dimen/DIMEN_50PX"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:background="@drawable/shape_btn_consult"
+            android:text="点 击 咨 询"
+            android:textColor="#fff"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+    </LinearLayout>
+    <com.xinfu.attorneyuser.view.ErrorLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+</RelativeLayout>

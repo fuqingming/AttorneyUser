@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:popupbtn="http://schemas.android.com/apk/res-auto"
+    android:background="#09000000"
+    android:orientation="vertical"
+    android:id="@+id/ll_move">
+
+    <com.joker.pager.BannerPager
+        android:id="@+id/banner_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_410PX"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#09000000"
+        />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:layout_marginBottom="@dimen/DIMEN_16PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:background="@drawable/shape_ll_tv"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入律所,律师，案件类型"
+            android:lines="1"
+            android:padding="@dimen/DIMEN_10PX"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/DIMEN_26PX" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bianmingchaxun_2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <com.xinfu.attorneyuser.view.menu.FilterMenu
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="区域"
+            android:textSize="20dp"
+            popupbtn:normalBg="@drawable/tab_bkg_line"
+            popupbtn:normalIcon="@mipmap/arrow_down_shop"
+            popupbtn:pressBg="@drawable/tab_bkg_selected"
+            popupbtn:pressIcon="@mipmap/arrow_up_shop"
+            />
+
+        <com.xinfu.attorneyuser.view.menu.FilterMenu
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="案件类型"
+            android:textSize="20dp"
+            popupbtn:normalBg="@drawable/tab_bkg_line"
+            popupbtn:normalIcon="@mipmap/arrow_down_shop"
+            popupbtn:pressBg="@drawable/tab_bkg_selected"
+            popupbtn:pressIcon="@mipmap/arrow_up_shop"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

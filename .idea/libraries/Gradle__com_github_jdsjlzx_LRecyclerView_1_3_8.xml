@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.jdsjlzx:LRecyclerView-1.3.8">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LRecyclerView-1.3.8.aar/6d2bfdf87e596f66a676ce602a2f1d2e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LRecyclerView-1.3.8.aar/6d2bfdf87e596f66a676ce602a2f1d2e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jdsjlzx/LRecyclerView/1.3.8/7cf1ee8df9cd55e95976b9bf4e08113edd21dd93/LRecyclerView-1.3.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_90PX"
+        android:background="@color/mainColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/DIMEN_36PX"
+            android:layout_height="@dimen/DIMEN_36PX"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_gravity="center"
+            android:background="@mipmap/back_03"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="星级服务"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="@dimen/DIMEN_36PX"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/tv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:layout_weight="3"
+            android:src="@mipmap/xiaolv" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainColor"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/DIMEN_20PX"
+                android:text="1.免费咨询"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainColor"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:layout_marginBottom="@dimen/DIMEN_20PX"
+                android:maxLines="2"
+                android:text="    新注册用户可以免费获取100律币，该律币用完后将转换为付费咨询。"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainColor"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/DIMEN_20PX"
+                android:text="2.星级咨询"/>
+
+            <ImageView
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_width="@dimen/DIMEN_60PX"
+                android:layout_height="@dimen/DIMEN_60PX"
+                android:src="@mipmap/xingxing"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="只限咨询一星律师"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="30律币/15分钟"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:src="@mipmap/xingxing"/>
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:src="@mipmap/xingxing"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="只限咨询二星及二星以下律师"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="80律币/15分钟"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:src="@mipmap/xingxing"/>
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:src="@mipmap/xingxing"/>
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:src="@mipmap/xingxing"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="只限咨询三星及三星以下律师"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="#FF9000"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/DIMEN_20PX"
+                    android:text="200律币/15分钟"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainColor"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/DIMEN_20PX"
+                android:text="3.律师在接单后15分钟内未回复，自动结束，律币会退还给咨询用户。"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

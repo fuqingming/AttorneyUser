@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="@dimen/DIMEN_140PX"
+            android:layout_height="@dimen/DIMEN_140PX"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/wenlvshi"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_below="@id/img_item"
+            android:layout_width="@dimen/DIMEN_160PX"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#3d85c6"
+            android:textSize="@dimen/DIMEN_28PX"
+            android:text="问律师"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/h_vi"
+        android:layout_below="@id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/gray_pressed"/>
+
+    <View
+        android:id="@+id/s_vi"
+        android:layout_marginLeft="@dimen/DIMEN_239PX"
+        android:layout_width="@dimen/DIMEN_1PX"
+        android:layout_height="@dimen/DIMEN_200PX"
+        android:background="@color/gray_pressed"/>
+
+</RelativeLayout>

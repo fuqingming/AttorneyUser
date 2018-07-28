@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:popupbtn="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_backgrount_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">activity_fragment_group_find_lawyer
+
+            <com.github.jdsjlzx.recyclerview.LRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include
+                android:id="@+id/empty_view"
+                layout="@layout/view_empty_layout"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_pop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <com.xinfu.attorneyuser.view.menu.FilterMenu
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="区域"
+                android:textSize="20dp"
+                popupbtn:normalBg="@drawable/tab_bkg_line"
+                popupbtn:normalIcon="@mipmap/arrow_down_shop"
+                popupbtn:pressBg="@drawable/tab_bkg_selected"
+                popupbtn:pressIcon="@mipmap/arrow_up_shop"
+                />
+
+            <com.xinfu.attorneyuser.view.menu.FilterMenu
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="案件类型"
+                android:textSize="20dp"
+                popupbtn:normalBg="@drawable/tab_bkg_line"
+                popupbtn:normalIcon="@mipmap/arrow_down_shop"
+                popupbtn:pressBg="@drawable/tab_bkg_selected"
+                popupbtn:pressIcon="@mipmap/arrow_up_shop"
+                />
+        </LinearLayout>
+        <com.xinfu.attorneyuser.view.ErrorLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <Button
+            android:id="@+id/top_btn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_22"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/ic_to_top"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</LinearLayout>

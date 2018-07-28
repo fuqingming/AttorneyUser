@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="2692490959" AppSecret="1cf6a413f248d704ff2c5ff3cc75a4b3" ShareByAppClient="true" RedirectUrl="http://xinfu.lvjietong.com" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone Enable="false" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook Enable="false" />
+<Twitter Enable="false" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram Enable="false" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat Id="4" SortId="4" AppId="wx5679dbc4dc224b36" AppSecret="60ff70dc3e4615bb02f10ae685726e83" userName="gh_afb25ac019c9" path="pages/index/index.html?id=1" BypassApproval="false" Enable="true" />
+<WechatMoments Id="5" SortId="5" AppId="wx5679dbc4dc224b36" AppSecret="3f7bf672f001b98201845232d182bbf1" BypassApproval="true" Enable="true" />
+<QQ AppId="1106024659" AppKey="ps1fTIdaHCz1UX5A" ShareByAppClient="true" BypassApproval="false" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Enable="false" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+</DevInfor>

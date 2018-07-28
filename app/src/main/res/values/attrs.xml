@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+        <attr name="contourColor" format="color" />
+        <attr name="contourSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <!--该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false-->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color"/>
+        <!--缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3-->
+        <attr name="pstsScaleZoomMax" format="float"/>
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean"/>
+        <!-- 宽为match_parent ，指示器的宽需手动计算的问题,这个属性设置为true,则指示器的位置和字体的宽一样-->
+        <!--    <attr name="pstsIndicatorWrap" format="boolean" />-->
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius_zhy" />
+        <attr name="type_zhy" />
+    </declare-styleable>
+
+    <declare-styleable name="popupbtn">
+        <!-- 正常状态下的背景 -->
+        <attr name="normalBg" format="reference" />
+        <!-- 按下状态下的背景 -->
+        <attr name="pressBg" format="reference" />
+        <!-- 正常状态下的图标 -->
+        <attr name="normalIcon" format="reference" />
+        <!-- 按下状态下的图标 -->
+        <attr name="pressIcon" format="reference" />
+        <!-- 按钮的padding -->
+    </declare-styleable>
+
+    <declare-styleable name="LibSwitchButton">
+        <!-- 正常view图片 -->
+        <attr name="sbImageNormal" format="reference"/>
+        <!-- 选中view图片 -->
+        <attr name="sbImageChecked" format="reference"/>
+        <!-- 手柄view图片 -->
+        <attr name="sbImageThumb" format="reference"/>
+        <!-- 是否选中 -->
+        <attr name="sbIsChecked" format="boolean"/>
+        <!-- 手柄view上下左右间距 -->
+        <attr name="sbMargins" format="dimension"/>
+        <!-- 手柄view左边间距 -->
+        <attr name="sbMarginLeft" format="dimension"/>
+        <!-- 手柄view顶部间距 -->
+        <attr name="sbMarginTop" format="dimension"/>
+        <!-- 手柄view右边间距 -->
+        <attr name="sbMarginRight" format="dimension"/>
+        <!-- 手柄view底部间距 -->
+        <attr name="sbMarginBottom" format="dimension"/>
+        <!-- 是否需要点击切换动画 -->
+        <attr name="sbIsNeedToggleAnim" format="boolean"/>
+        <!-- 是否调试模式 -->
+        <attr name="sbIsDebug" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ContactItemView">
+        <attr name="contactItemImage" format="reference"/>
+        <attr name="contactItemName" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/shen"
+            android:orientation="vertical">
+
+            <!--<ImageView
+                android:id="@+id/bg_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_600PX"
+                android:layout_weight="1"
+                android:src="@drawable/shen"
+                android:scaleType="fitXY"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:layout_marginLeft="@dimen/DIMEN_60PX"
+                android:layout_marginRight="@dimen/DIMEN_60PX"
+                android:layout_marginBottom="@dimen/DIMEN_30PX"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="您好，"
+                    android:textColor="#3d85c6"
+                    android:textSize="@dimen/DIMEN_68PX"/>
+
+                <TextView
+                    android:id="@+id/tips2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="您有什么文书需要审查？"
+                    android:textColor="#3d85c6"
+                    android:textSize="@dimen/DIMEN_44PX"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_40PX"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:layout_marginBottom="@dimen/DIMEN_20PX"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="民事"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="商事"
+                        android:gravity="center"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_shape3"
+                        android:gravity="center"
+                        android:text="知识产权"
+                        android:textColor="@color/mainColor"
+                        android:textSize="@dimen/DIMEN_28PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:layout_marginBottom="@dimen/DIMEN_20PX"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="刑事"
+                        android:gravity="center"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="行政"
+                        android:gravity="center"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="涉外"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:gravity="center"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:layout_marginBottom="@dimen/DIMEN_20PX"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/DIMEN_6PX"
+                        android:paddingBottom="@dimen/DIMEN_6PX"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="其他"
+                        android:gravity="center"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:background="@drawable/text_shape3"
+                        android:textColor="@color/mainColor"
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:id="@+id/tv_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:text="下一步>>"
+                        android:gravity="right"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        android:textColor="#3d85c6"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

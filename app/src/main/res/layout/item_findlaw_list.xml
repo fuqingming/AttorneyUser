@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_220PX"
+    xmlns:zhy="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_220PX">
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_margin="@dimen/DIMEN_20PX"
+            android:layout_width="@dimen/DIMEN_160PX"
+            android:layout_height="@dimen/DIMEN_170PX"
+            android:layout_centerVertical="true"
+            app:borderRadius_zhy="10dp"
+            app:type_zhy="round"/>
+        <LinearLayout
+            android:id="@+id/layout_info1"
+            android:layout_toRightOf="@id/head_img"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_firm"
+            android:layout_below="@id/layout_info1"
+            android:layout_toRightOf="@id/head_img"
+            android:layout_width="@dimen/DIMEN_300PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_pression"
+            android:layout_below="@id/tv_firm"
+            android:layout_toRightOf="@id/head_img"
+            android:layout_width="@dimen/DIMEN_360PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:gravity="center_vertical"/>
+
+        <!--<com.xinfu.attorneyuser.utils.RatingBar
+            android:id="@+id/rb"
+            android:layout_width="@dimen/DIMEN_400PX"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_below="@+id/tv_pression"
+            android:layout_toEndOf="@+id/head_img"
+            android:layout_toRightOf="@+id/head_img"
+            app:starEmpty="@drawable/myratingbar_on"
+            app:starFill="@drawable/myratingbar_on"
+            app:starHalf="@drawable/myratingbar_on"
+            app:starImageSize="40dp"
+            app:starPadding="@dimen/DIMEN_1PX"
+            app:starStep="1.5"
+            app:stepSize="Half" />-->
+
+        <LinearLayout
+            android:layout_width="@dimen/DIMEN_400PX"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/head_img"
+            android:layout_toRightOf="@+id/head_img"
+            android:layout_below="@+id/tv_pression"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="@dimen/DIMEN_50PX"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:scaleType="centerInside"
+                android:src="@mipmap/xingxing" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="@dimen/DIMEN_50PX"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:scaleType="centerInside"
+                android:src="@mipmap/xingxing" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="@dimen/DIMEN_50PX"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:scaleType="centerInside"
+                android:src="@mipmap/xingxing" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_experience"
+        android:layout_width="@dimen/DIMEN_120PX"
+        android:layout_height="@dimen/DIMEN_140PX"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:text="5年"
+        android:gravity="center"
+        android:textSize="@dimen/DIMEN_28PX"
+        android:background="@mipmap/buleflag"/>
+
+</RelativeLayout>

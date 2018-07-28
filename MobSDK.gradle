@@ -1,0 +1,45 @@
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "26daa0085111a"
+    appSecret "0598b8b9cc52b96fc296a24a808d65ce"
+
+    ShareSDK {
+        devInfo {
+
+            Wechat {
+                id 4
+                sortId 4
+                appId "wx5679dbc4dc224b36"
+                appSecret "60ff70dc3e4615bb02f10ae685726e83"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                bypassApproval false
+                enable true
+            }
+
+            WechatMoments {
+                id 5
+                sortId 5
+                appId "wx5679dbc4dc224b36"
+                appSecret "3f7bf672f001b98201845232d182bbf1"
+                bypassApproval true
+                enable true
+            }
+
+            SinaWeibo {
+                appKey "2692490959"
+                appSecret "1cf6a413f248d704ff2c5ff3cc75a4b3"
+                callbackUri "http://xinfu.lvjietong.com"
+                shareByAppClient true
+            }
+
+            QQ {
+                appId "1106024659"
+                appKey "ps1fTIdaHCz1UX5A"
+                shareByAppClient true
+                bypassApproval false
+            }
+        }
+    }
+}

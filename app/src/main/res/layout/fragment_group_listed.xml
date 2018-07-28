@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#09000000"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:text="常见问题"
+            android:gravity="center"
+            android:paddingTop="@dimen/DIMEN_6PX"
+            android:paddingBottom="@dimen/DIMEN_6PX"
+            android:textSize="@dimen/DIMEN_28PX"
+            android:background="@drawable/text_shape3"
+            android:textColor="@color/mainColor"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_10PX"
+            android:text="在线申请"
+            android:gravity="center"
+            android:paddingTop="@dimen/DIMEN_6PX"
+            android:paddingBottom="@dimen/DIMEN_6PX"
+            android:textSize="@dimen/DIMEN_28PX"
+            android:background="@drawable/text_shape3"
+            android:textColor="@color/mainColor"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_20PX">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/DIMEN_10PX"
+            android:text="姓名"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+        <EditText
+            android:id="@+id/name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="输入姓名"
+            android:padding="@dimen/DIMEN_10PX"
+            android:textColorHint="#d9d9d9"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_20PX">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/DIMEN_10PX"
+            android:text="联系方式"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+        <EditText
+            android:id="@+id/phone_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="输入手机号"
+            android:inputType="number"
+            android:padding="@dimen/DIMEN_10PX"
+            android:textColorHint="#d9d9d9"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_20PX">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/DIMEN_10PX"
+            android:text="公司名称"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+        <EditText
+            android:id="@+id/et_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:hint="请输入公司名"
+            android:inputType="number"
+            android:padding="@dimen/DIMEN_10PX"
+            android:textColorHint="#d9d9d9"
+            android:textSize="@dimen/DIMEN_28PX" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+    <EditText
+        android:id="@+id/content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="请输入"
+        android:padding="@dimen/DIMEN_10PX"
+        android:textColorHint="#d9d9d9"
+        android:textSize="@dimen/DIMEN_28PX" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_70PX"
+        android:layout_marginBottom="@dimen/DIMEN_80PX"
+        android:layout_marginLeft="@dimen/DIMEN_120PX"
+        android:layout_marginRight="@dimen/DIMEN_120PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:background="@color/mainColor"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/DIMEN_30PX" />
+
+</LinearLayout>

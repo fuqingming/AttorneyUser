@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/order_shape_black">
+
+        <ImageView
+            android:id="@+id/dialog_wait_icon"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/wait_logo"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/dialog_wait_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="律界通"
+            android:textColor="@color/gray_pressed"
+            android:textSize="@dimen/DIMEN_22PX" />
+    </RelativeLayout>
+</RelativeLayout>
